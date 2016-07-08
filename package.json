@@ -1,6 +1,6 @@
 {
   "name": "recursive-omit-by",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Deletes keys from the object that match a condition without side effects.",
   "main": "index.js",
   "files": [

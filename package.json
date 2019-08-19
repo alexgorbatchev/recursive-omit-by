@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "del-object-path": "^0.1.0",
-    "object-merge": "^2.5.1",
-    "recursive-iterator": "^2.0.0"
+    "lodash.merge": "^4.6.2",
+    "recursive-iterator": "^3.3.0"
   }
 }

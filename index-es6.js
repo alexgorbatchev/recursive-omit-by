@@ -1,16 +1,16 @@
 import RecursiveIterator from 'recursive-iterator';
 import delObjectPath from 'del-object-path';
-import objectMerge from 'object-merge';
+import merge from 'lodash.merge';
 
-export default function recursiveOmitBy(object, callback) {
+export default function recursiveOmitBy(object, callback, ...recursiveIteratorOpts) {
   let results;
 
-  for (let meta of new RecursiveIterator(object)) {
+  for (let meta of new RecursiveIterator(object, ...recursiveIteratorOpts)) {
     const shouldOmit = callback(meta);
 
     if (shouldOmit) {
       if (!results) {
-        results = objectMerge({}, object);
+        results = merge({}, object);
       }
 
       delObjectPath(results, meta.path.join('.'));

@@ -9,7 +9,7 @@ Deletes keys from the object that match a condition without side effects.
 ## Installation
 
 ```
-npm instal --save-dev recursive-omit-by
+npm install --save-dev recursive-omit-by
 ```
 
 ## Usage
